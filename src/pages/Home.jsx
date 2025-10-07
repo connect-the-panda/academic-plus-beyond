@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Brain, Zap, Rocket, Calendar, BookOpen, ChevronRight, Check, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const App = () => {
+const Home = () => {
   const CALENDAR_LINK = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0PSO0iD617Y9PVQEH9tAQiqCl795tLSaWIyq7tMNwiWEG4FU4cZ936P5jdAMT52wYPltH1FBkO";
   const [isVisible, setIsVisible] = useState({});
   const observerRef = useRef(null);
@@ -85,11 +85,10 @@ const App = () => {
 
         <nav className="relative z-10 container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
-            <div className="text-white font-light text-sm tracking-widest">Academic + Beyond</div>
+            <Link to="/" className="text-white font-light text-sm tracking-widest hover:text-indigo-200 transition-colors">Academic + Beyond</Link>
             <div className="flex gap-6">
-              <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
-                Blog
-              </Link>
+              <Link to="/" className="text-white hover:text-indigo-200 transition-colors">Home</Link>
+              <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">Blog</Link>
             </div>
           </div>
         </nav>
@@ -499,4 +498,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
