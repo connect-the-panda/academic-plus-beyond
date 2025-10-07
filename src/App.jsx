@@ -39,7 +39,7 @@ const App = () => {
         "Strategic communication",
         "Reflective growth practices"
       ],
-      color: "from-indigo-500 to-purple-600",
+      color: "from-blue-600 to-indigo-600",
       highlight: false
     },
     {
@@ -102,7 +102,7 @@ const App = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-3">
               <a
                 href={CALENDAR_LINK} target="_blank" rel="noopener noreferrer"
-                className="group bg-white text-indigo-900 px-8 py-4 rounded-full font-medium hover:bg-indigo-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-2"
+                className="group bg-blue-600 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
                 Book Free Consultation
@@ -158,7 +158,7 @@ const App = () => {
               }`}
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
-              <div className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white w-16 h-16 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
+              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white w-16 h-16 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
                 {item.icon}
               </div>
               <h3 className="text-xl font-bold text-indigo-900 mb-2">{item.title}</h3>
@@ -279,14 +279,14 @@ const App = () => {
                 id={`service-${idx}`}
                 data-animate
                 className={`relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 overflow-hidden ${
-                  service.highlight ? 'ring-4 ring-indigo-500 md:scale-105' : ''
+                  service.highlight ? 'ring-4 ring-blue-600 md:scale-105' : ''
                 } ${
                   isVisible[`service-${idx}`] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${idx * 150}ms` }}
               >
                 {service.highlight && (
-                  <div className="absolute top-0 right-0 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-2 text-sm font-bold rounded-bl-2xl">
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 text-sm font-bold rounded-bl-2xl">
                     MOST POPULAR
                   </div>
                 )}
@@ -402,7 +402,7 @@ const App = () => {
                   }`}
                   style={{ transitionDelay: `${idx * 150}ms` }}
                 >
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg">
+                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg">
                     {item.step}
                   </div>
                   <div className="flex-1 pt-2">
