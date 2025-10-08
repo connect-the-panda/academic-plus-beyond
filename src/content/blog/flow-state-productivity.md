@@ -1,6 +1,6 @@
 ---
 title: "Achieving Flow State: The Science of Peak Performance"
-date: 2024-03-08T10:00:00.000Z
+date: 2025-10-08T10:53:00.000-04:00
 excerpt: Learn how to enter and maintain flow states for enhanced productivity
   and deeper engagement with your work.
 category: Productivity
