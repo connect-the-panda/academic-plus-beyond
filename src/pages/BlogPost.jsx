@@ -30,29 +30,31 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800">
       {/* Navigation */}
-      <nav className="relative z-10 container mx-auto px-6 py-6">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="text-white font-light text-sm tracking-widest hover:text-indigo-200 transition-colors">
-            Academic + Beyond
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link to="/#services" className="text-white hover:text-indigo-200 transition-colors">
-              Services
+      <nav className="sticky top-0 z-50 bg-indigo-900/95 backdrop-blur-sm shadow-lg">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <Link to="/" className="text-white font-light text-sm tracking-widest hover:text-indigo-200 transition-colors">
+              Academic + Beyond
             </Link>
-            <Link to="/#about" className="text-white hover:text-indigo-200 transition-colors">
-              About
-            </Link>
-            <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
-              Blog
-            </Link>
-            <a
-              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0PSO0iD617Y9PVQEH9tAQiqCl795tLSaWIyq7tMNwiWEG4FU4cZ936P5jdAMT52wYPltH1FBkO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
-            >
-              Book Free Call
-            </a>
+            <div className="flex items-center gap-6">
+              <Link to="/#services" className="text-white hover:text-indigo-200 transition-colors">
+                Services
+              </Link>
+              <Link to="/#about" className="text-white hover:text-indigo-200 transition-colors">
+                About
+              </Link>
+              <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
+                Blog
+              </Link>
+              <a
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0PSO0iD617Y9PVQEH9tAQiqCl795tLSaWIyq7tMNwiWEG4FU4cZ936P5jdAMT52wYPltH1FBkO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+              >
+                Book Free Call
+              </a>
+            </div>
           </div>
         </div>
       </nav>

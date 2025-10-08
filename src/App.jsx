@@ -83,27 +83,29 @@ const App = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 opacity-95"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTAtNHYyaDJ2LTJoLTJ6bTItMnYyaDJ2LTJoLTJ6bTQgMHYyaDJ2LTJoLTJ6bTQgMHYyaDJ2LTJoLTJ6bTQgMHYyaDJ2LTJoLTJ6bTQgMHYyaDJ2LTJoLTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
-        <nav className="relative z-10 container mx-auto px-6 py-6">
-          <div className="flex justify-between items-center">
-            <div className="text-white font-light text-sm tracking-widest">Academic + Beyond</div>
-            <div className="flex items-center gap-6">
-              <a href="#services" className="text-white hover:text-indigo-200 transition-colors">
-                Services
-              </a>
-              <a href="#about" className="text-white hover:text-indigo-200 transition-colors">
-                About
-              </a>
-              <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
-                Blog
-              </Link>
-              <a
-                href={CALENDAR_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
-              >
-                Book Free Call
-              </a>
+        <nav className="sticky top-0 z-50 bg-indigo-900/95 backdrop-blur-sm shadow-lg">
+          <div className="container mx-auto px-6 py-4">
+            <div className="flex justify-between items-center">
+              <div className="text-white font-light text-sm tracking-widest">Academic + Beyond</div>
+              <div className="flex items-center gap-6">
+                <a href="#services" className="text-white hover:text-indigo-200 transition-colors">
+                  Services
+                </a>
+                <a href="#about" className="text-white hover:text-indigo-200 transition-colors">
+                  About
+                </a>
+                <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
+                  Blog
+                </Link>
+                <a
+                  href={CALENDAR_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+                >
+                  Book Free Call
+                </a>
+              </div>
             </div>
           </div>
         </nav>
