@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, Brain } from 'lucide-react';
 import { getAllBlogPosts } from '../utils/blogLoader';
 
 export default function Blog() {
@@ -12,8 +12,11 @@ export default function Blog() {
       <nav className="sticky top-0 z-50 bg-indigo-900/95 backdrop-blur-sm shadow-lg">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="text-white font-light text-sm tracking-widest hover:text-indigo-200 transition-colors">
-              Academic + Beyond
+            <Link to="/" className="flex items-center gap-2.5 text-white hover:text-indigo-200 transition-colors">
+              <Brain className="w-5 h-5 text-blue-400" />
+              <span className="font-light text-sm tracking-widest">
+                ACADEMIC <span className="text-blue-400">+</span> <span className="font-semibold">BEYOND</span>
+              </span>
             </Link>
             <div className="flex items-center gap-6">
               <Link to="/#services" className="text-white hover:text-indigo-200 transition-colors">

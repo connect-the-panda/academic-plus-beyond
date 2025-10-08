@@ -82,7 +82,12 @@ const App = () => {
       <nav className="sticky top-0 z-50 bg-indigo-900/95 backdrop-blur-sm shadow-lg">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-white font-light text-sm tracking-widest">Academic + Beyond</div>
+            <div className="flex items-center gap-2.5 text-white">
+              <Brain className="w-5 h-5 text-blue-400" />
+              <span className="font-light text-sm tracking-widest">
+                ACADEMIC <span className="text-blue-400">+</span> <span className="font-semibold">BEYOND</span>
+              </span>
+            </div>
             <div className="flex items-center gap-6">
               <a href="#services" className="text-white hover:text-indigo-200 transition-colors">
                 Services
