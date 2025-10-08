@@ -14,13 +14,24 @@ export default function Blog() {
           <Link to="/" className="text-white font-light text-sm tracking-widest hover:text-indigo-200 transition-colors">
             Academic + Beyond
           </Link>
-          <div className="flex gap-6">
-            <Link to="/" className="text-white hover:text-indigo-200 transition-colors">
-              Home
+          <div className="flex items-center gap-6">
+            <Link to="/#services" className="text-white hover:text-indigo-200 transition-colors">
+              Services
+            </Link>
+            <Link to="/#about" className="text-white hover:text-indigo-200 transition-colors">
+              About
             </Link>
             <Link to="/blog" className="text-white font-semibold hover:text-indigo-200 transition-colors">
               Blog
             </Link>
+            <a
+              href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0PSO0iD617Y9PVQEH9tAQiqCl795tLSaWIyq7tMNwiWEG4FU4cZ936P5jdAMT52wYPltH1FBkO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+            >
+              Book Free Call
+            </a>
           </div>
         </div>
       </nav>

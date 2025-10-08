@@ -86,10 +86,24 @@ const App = () => {
         <nav className="relative z-10 container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
             <div className="text-white font-light text-sm tracking-widest">Academic + Beyond</div>
-            <div className="flex gap-6">
+            <div className="flex items-center gap-6">
+              <a href="#services" className="text-white hover:text-indigo-200 transition-colors">
+                Services
+              </a>
+              <a href="#about" className="text-white hover:text-indigo-200 transition-colors">
+                About
+              </a>
               <Link to="/blog" className="text-white hover:text-indigo-200 transition-colors">
                 Blog
               </Link>
+              <a
+                href={CALENDAR_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+              >
+                Book Free Call
+              </a>
             </div>
           </div>
         </nav>
@@ -176,7 +190,7 @@ const App = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2
