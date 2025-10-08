@@ -108,7 +108,7 @@ export default function BlogPost() {
 
           {/* Content */}
           <div
-            className="prose prose-invert prose-lg max-w-none
+            className="prose prose-invert prose-lg max-w-none text-white
               prose-headings:text-white prose-headings:font-bold
               prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4
               prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
@@ -117,8 +117,9 @@ export default function BlogPost() {
               prose-ol:text-white prose-ol:my-6
               prose-li:my-2 prose-li:text-white
               prose-strong:text-white prose-strong:font-semibold
-              prose-em:text-indigo-100
-              prose-a:text-blue-300 prose-a:no-underline hover:prose-a:text-blue-200"
+              prose-em:text-white
+              prose-a:text-blue-300 prose-a:no-underline hover:prose-a:text-blue-200
+              [&>*]:text-white"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
         </div>
