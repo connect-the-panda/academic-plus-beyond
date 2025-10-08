@@ -1,51 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
-
-const blogPosts = [
-  {
-    id: 1,
-    slug: 'metacognition-academic-success',
-    title: 'The Power of Metacognition: Thinking About How You Think',
-    excerpt: 'Discover how metacognitive strategies can transform your learning process and unlock your academic potential.',
-    date: '2024-03-15',
-    readTime: '5 min read',
-    category: 'Learning Strategies',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80'
-  },
-  {
-    id: 2,
-    slug: 'flow-state-productivity',
-    title: 'Achieving Flow State: The Science of Peak Performance',
-    excerpt: 'Learn how to enter and maintain flow states for enhanced productivity and deeper engagement with your work.',
-    date: '2024-03-08',
-    readTime: '7 min read',
-    category: 'Productivity',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80'
-  },
-  {
-    id: 3,
-    slug: 'academic-writing-clarity',
-    title: 'Writing with Clarity: Principles for Academic Excellence',
-    excerpt: 'Master the fundamental principles that separate good academic writing from great academic writing.',
-    date: '2024-03-01',
-    readTime: '6 min read',
-    category: 'Writing Skills',
-    image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80'
-  },
-  {
-    id: 4,
-    slug: 'transferable-skills-beyond-classroom',
-    title: 'Beyond the Classroom: Building Transferable Skills for Life',
-    excerpt: 'Explore how the skills you develop academically translate into real-world success across all domains.',
-    date: '2024-02-22',
-    readTime: '5 min read',
-    category: 'Personal Development',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80'
-  }
-];
+import { getAllBlogPosts } from '../utils/blogLoader';
 
 export default function Blog() {
+  const blogPosts = getAllBlogPosts();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800">
       {/* Navigation */}
@@ -82,7 +42,7 @@ export default function Blog() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           {blogPosts.map((post) => (
             <Link
-              key={post.id}
+              key={post.slug}
               to={`/blog/${post.slug}`}
               className="group bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden hover:bg-white/15 transition-all duration-300 hover:scale-105"
             >
