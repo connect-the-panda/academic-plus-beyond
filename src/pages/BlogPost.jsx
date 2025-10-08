@@ -112,14 +112,15 @@ export default function BlogPost() {
               prose-headings:text-white prose-headings:font-bold
               prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4
               prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
-              prose-p:text-white prose-p:leading-relaxed prose-p:mb-6
+              prose-p:text-white prose-p:leading-relaxed prose-p:mb-6 prose-p:mt-0
               prose-ul:text-white prose-ul:my-6
               prose-ol:text-white prose-ol:my-6
               prose-li:my-2 prose-li:text-white
               prose-strong:text-white prose-strong:font-semibold
               prose-em:text-white
               prose-a:text-blue-300 prose-a:no-underline hover:prose-a:text-blue-200
-              [&>*]:text-white"
+              [&>*]:text-white
+              [&>p+p]:mt-6"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
         </div>
