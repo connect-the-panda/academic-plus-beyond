@@ -1,8 +1,10 @@
 ---
 title: "Achieving Flow State: The Science of Peak Performance"
 date: 2025-10-08T10:53:00.000-04:00
-excerpt: Learn how to enter and maintain flow states for enhanced productivity
-  and deeper engagement with your work.
+excerpt: The beauty of flow is that it isn't about working harder. It's about
+  working in harmony with how your brain is designed to perform at its best.
+  When you find it, tasks that once felt like a slog become genuinely
+  satisfying.
 category: Productivity
 readTime: 7 min read
 image: https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80
