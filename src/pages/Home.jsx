@@ -474,9 +474,9 @@ const Home = () => {
             <p className="text-xl text-indigo-300 mb-8">Skills for school. Tools for life.</p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8 text-gray-300">
-              <a href="mailto:sanaphay@gmail.com" className="flex items-center gap-2 hover:text-indigo-400 transition-colors">
+              <a href="mailto:academicplusbeyond@gmail.com" className="flex items-center gap-2 hover:text-indigo-400 transition-colors">
                 <Mail className="w-5 h-5" />
-                sanaphay@gmail.com
+                academicplusbeyond@gmail.com
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
