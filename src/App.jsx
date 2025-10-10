@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Zap, Rocket, Calendar, BookOpen, ChevronRight, Check, Mail, MapPin } from 'lucide-react';
+import { Brain, Zap, Rocket, Calendar, BookOpen, ChevronRight, Check, Mail, MapPin, HelpCircle, Linkedin, ExternalLink } from 'lucide-react';
+import ContactForm from './components/ContactForm';
 
 const App = () => {
   const CALENDAR_LINK = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0PSO0iD617Y9PVQEH9tAQiqCl795tLSaWIyq7tMNwiWEG4FU4cZ936P5jdAMT52wYPltH1FBkO";
@@ -154,6 +155,30 @@ const App = () => {
         </div>
       </header>
 
+      {/* Quick Contact Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 to-indigo-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto">
+            <ContactForm
+              title="Questions Before Booking?"
+              subtitle="Get in touch! I typically respond within 24 hours."
+              compact={true}
+            />
+            <p className="text-center mt-4 text-sm text-gray-600">
+              Or skip the form and{' '}
+              <a
+                href={CALENDAR_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-800 font-medium underline"
+              >
+                book your free consultation
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Value Propositions */}
       <section className="py-16 md:py-24 container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -210,6 +235,15 @@ const App = () => {
             >
               Hi, I'm Sanaphay Rattanavong
             </h2>
+
+            {/* Profile Photo */}
+            <div className="flex justify-center mb-8">
+              <img
+                src="/profile.jpg"
+                alt="Sanaphay Rattanavong"
+                className="w-48 h-48 rounded-full object-cover shadow-xl ring-4 ring-indigo-100"
+              />
+            </div>
 
             <div
               id="about-content"
@@ -298,7 +332,8 @@ const App = () => {
           >
             Choose Your Learning Path
           </h2>
-          <p className="text-xl text-gray-600 text-center mb-16">Select the option that matches your goals and timeline</p>
+          <p className="text-xl text-gray-600 text-center mb-2">Select the option that matches your goals and timeline</p>
+          <p className="text-sm text-gray-500 text-center mb-16">All prices in CAD</p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, idx) => (
@@ -489,6 +524,56 @@ const App = () => {
         </div>
       </section>
 
+      {/* FAQ & Contact Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* FAQ */}
+              <div>
+                <h2 className="text-3xl font-bold text-indigo-900 mb-8 flex items-center gap-2">
+                  <HelpCircle className="w-8 h-8 text-indigo-600" />
+                  Common Questions
+                </h2>
+                <div className="space-y-6">
+                  {[
+                    {
+                      q: "What does a typical session look like?",
+                      a: "Sessions are conversational and collaborative. We'll work through your specific challenges, develop strategies together, and practice new skills in real-time."
+                    },
+                    {
+                      q: "Do you edit my work for me?",
+                      a: "No—I teach you how to edit and improve your own work. You'll leave with skills, not just a corrected paper."
+                    },
+                    {
+                      q: "What should I bring to my first session?",
+                      a: "Just your current assignment or project (if you have one) and an open mind! We'll start where you are."
+                    },
+                    {
+                      q: "Are sessions in-person or online?",
+                      a: "Both! I offer in-person sessions in Toronto and online sessions via Google Meet for students worldwide."
+                    }
+                  ].map((item, idx) => (
+                    <div key={idx} className="border-l-4 border-indigo-600 pl-4">
+                      <h3 className="font-semibold text-indigo-900 mb-2">{item.q}</h3>
+                      <p className="text-gray-600">{item.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <div>
+                <ContactForm
+                  title="Still Have Questions?"
+                  subtitle="I'm here to help!"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
         <div className="container mx-auto px-6">
@@ -507,9 +592,31 @@ const App = () => {
               </div>
             </div>
 
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm mb-6">
               Perfect for international students at UofT, York, TMU, George Brown & beyond.
             </p>
+
+            {/* Social Links */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <a
+                href="https://www.linkedin.com/in/sanaphay-rattanavong"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://sanaphay.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition-colors"
+              >
+                <ExternalLink className="w-5 h-5" />
+                <span>Writing Portfolio</span>
+              </a>
+            </div>
 
             <div className="mt-8 pt-8 border-t border-gray-700 text-gray-400 text-sm">
               © 2025 Academic + Beyond
