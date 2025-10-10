@@ -155,30 +155,6 @@ const App = () => {
         </div>
       </header>
 
-      {/* Quick Contact Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 to-indigo-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto">
-            <ContactForm
-              title="Questions Before Booking?"
-              subtitle="Get in touch! I typically respond within 24 hours."
-              compact={true}
-            />
-            <p className="text-center mt-4 text-sm text-gray-600">
-              Or skip the form and{' '}
-              <a
-                href={CALENDAR_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-600 hover:text-indigo-800 font-medium underline"
-              >
-                book your free consultation
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Value Propositions */}
       <section className="py-16 md:py-24 container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -599,7 +575,7 @@ const App = () => {
             {/* Social Links */}
             <div className="flex items-center justify-center gap-4 mb-8">
               <a
-                href="https://www.linkedin.com/in/sanaphay-rattanavong"
+                href="https://www.linkedin.com/in/rattanavong/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition-colors"
@@ -608,7 +584,7 @@ const App = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://sanaphay.com"
+                href="https://sanaphay.portfolio.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-indigo-800 hover:bg-indigo-700 rounded-lg transition-colors"

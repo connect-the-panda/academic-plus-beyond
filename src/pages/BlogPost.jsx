@@ -120,7 +120,9 @@ export default function BlogPost() {
               prose-em:text-white
               prose-a:text-blue-300 prose-a:no-underline hover:prose-a:text-blue-200
               [&>*]:text-white
-              [&>p+p]:mt-6"
+              [&>p+p]:mt-6
+              [&_ul>li]:marker:text-blue-300 [&_ul>li]:marker:text-xl
+              [&_ol>li]:marker:text-blue-300 [&_ol>li]:marker:font-semibold"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
           />
         </div>
